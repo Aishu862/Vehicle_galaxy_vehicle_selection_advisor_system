@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEHICLE GALAXY</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='carousal.css')}}">
+    
+    
+</head>
+<body>
+   
+    <header>
+        <div class="container-fluid">
+            <div class="top-section">
+                <div class="top-left-section">
+                    <div class="logo">
+                        <img src="{{ url_for('static', filename='enlarge_20231007_125330_new.png')}}" alt="" srcset="">
+                    </div class = "nav">
+                    <a class="active" href="http://localhost/project3/index_new.php">Home</a>
+                    <a href="/">new car</a>
+                    <a href="/usedcar">used car</a>
+                    <a href="/sellcarprice">sell car</a>                  
+                </div>
+            
+                <div class="top-right-section">
+                    <div class="lang-profile">
+                      
+                    </div>
+                  <!-- <a href="form.html">  <button class="login-btn">Login/Register</button></a> -->
+                </div>
+            </div>
+           
+        </div>
+    </header>
+ 
+    <section class="home-page">
+        <div class="home-page-container">
+            <div class="car-form" style="margin-left: 450px;">
+                <div class="form-head">
+                    <h1>Get Your used car Recommandation 🤖...</h1>
+                </div>
+                <form action="/usedcar" class="main-form" method="POST">
+                   
+                    
+                    <div class="form-input">
+                        <input type="text" placeholder="Enter Year" name="year">
+                        <input type="text" placeholder="Enter Kilometers_driven " name="kilometers_driven">
+                        <input type="text" placeholder="Enter Fuel type" name="fuel">
+                        <input type="text" placeholder="Enter Price" name="price">
+                        <input type="text" placeholder="Enter owner_type" name="owner_type">
+                        <input type="text" placeholder="Enter Transmission Type" name="transmission">
+                    </div>
+                    <button class="form-btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="carousal-container">
+            <div class="carousal-slide">
+                <img class="carousal-non-active carousal-active" id="carousal-img-1"src="{{ url_for('static', filename='carousal-images/img2.jpg')}}" alt="">
+                <img class="carousal-non-active"id="carousal-img-2"src="{{ url_for('static', filename='carousal-images/img3.jpg')}}" alt="">
+                <img class="carousal-non-active"id="carousal-img-3"src="{{ url_for('static', filename='carousal-images/img2.jpg')}}" alt="">
+                <img class="carousal-non-active"id="carousal-img-4"src="{{ url_for('static', filename='carousal-images/img1.jpg')}}" alt="">
+            
+            </div>
+     
+        </div>
+
+    </section>
+
+
+        <!-- <section class="home-page">
+            <div class="home-page-container">
+                <div class="car-form" style="width: 1200px; height: 550px;">
+                    <div class="form-head">
+                        <h1>Recommendations</h1>
+                    </div>
+                    <div class="bottom-search">
+                        <p>{{recommendations}}</p>
+                    </div>
+                </div>
+            </div>
+
+        
+   
+
+            <div class="carousal-container">
+                <div class="carousal-slide">
+                    <img class="carousal-non-active carousal-active" id="carousal-img-1"src="{{ url_for('static', filename='carousal-images/img2.jpg')}}" alt="">
+                    <img class="carousal-non-active"id="carousal-img-2"src="{{ url_for('static', filename='carousal-images/img3.jpg')}}" alt="">
+                    <img class="carousal-non-active"id="carousal-img-3"src="{{ url_for('static', filename='carousal-images/img2.jpg')}}" alt="">
+                    <img class="carousal-non-active"id="carousal-img-4"src="{{ url_for('static', filename='carousal-images/img1.jpg')}}" alt="">
+                
+                </div>
+         
+            </div>
+        </section> -->
+
+ 
+
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
