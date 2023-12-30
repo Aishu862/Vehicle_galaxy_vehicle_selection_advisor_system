@@ -1,0 +1,163 @@
+/* <!-- <<<<====home-page style starts here=====>>> --> */
+.home-page {/*oueter most container */
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  margin-top: 0.3rem;
+  position: relative;
+}
+
+.home-page-container {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  z-index: 2;
+}
+/* <!-- <<<<====home-page CAR FORM style starts here=====>>> --> */
+
+.car-form {/*oueter most container of form */
+  width: 350px;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-top: 3.4rem;
+  margin-left: 4rem;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form-head {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.form-select,
+.form-checkbox,
+.form-input {
+  width: 100%;
+  height: 18%;
+}
+.form-select {
+  display: flex;
+  justify-content: center;
+  height: 14%;
+}
+.form-select > button {
+  width: 50%;
+  border: none;
+}
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+.first-checkbox > input,
+.second-checkbox > input {
+  margin-right: 0.4rem;
+}
+.form-input {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-input > input {
+  height: 100%;
+  border: 1px solid grey;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+}
+.form-select > button:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.form-btn {
+  width: 100%;
+  height: 44px;
+  margin-top: -1rem;
+  font-size: 1rem;
+  background-color: rgb(255, 31, 31);
+  color: white;
+  border: none;
+  border-radius: 5pxa;
+}
+.first-checkbox {
+  margin-right: 1rem;
+}
+.bottom-search {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+/* <!-- <<<<====home-page CAR FORM style ends here=====>>> --> */
+
+/* <!-- <<<<====home-page CAROUSAL style starts here=====>>> --> */
+.carousal-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1400px;
+  margin: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.carousal-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.carousal-slide > img {
+  width: 100%;
+  height: 100%;
+  max-height: 650px;
+}
+.carousal-non-active {
+  display: none;
+}
+.carousal-active {
+  display: block;
+}
+.carousal-btn {
+  width: 700px;
+  height: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+.carousal-btn > button {
+  background-color: blueviolet;
+  background: none;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.carousal-btn > button:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.carousal-btn > .carousal-btn-non-active {
+  border-bottom: none;
+}
+.carousal-btn > .carousal-btn-active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+/* <!-- <<<<====home-page CAROUSAL style ends here=====>>> --> */
+
+/* <!-- <<<<====home-page style ends here=====>>> --> */
