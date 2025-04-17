@@ -1,1 +1,3 @@
-# Vehicle_galaxy_vehicle_advisor_system
+# Vehicle Galaxy – Vehicle Selection Advisor System
+
+This project helps users choose vehicles based on their preferences and needs.
